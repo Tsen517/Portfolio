@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI',sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0a0a0a;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links li a{
+    color: #fff;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+
+.nav-links a:hover{
+    color: #7F77DD;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 5rem 10%;
+    gap: 2rem;
+}
+
+.home-content{
+    flex: 1.5;
+}
+
+.home-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-img img{
+    width: 80%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    border:8px solid #7F77DD;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: .5rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #7F77DD;
+}
+
+.btn{
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    background: #7F77DD;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    transition: background 0.3s;
+}
+
+.btn:hover{
+    background: #534AB7;
+}
+
+#about{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    align-items: center;
+}
+.about-img img{
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.about-text h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #7F77DD;
+}
+.about-text p{
+    color: #888;
+    line-height: 1.8;
+    margin-bottom: .75rem;
+}
+#skills{
+    padding: 5rem 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+.skill-card{
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-weight: 500;
+    transition: transform .2s background .2s;
+}
+.skill-card:hover{
+    transform: scale(1.05);
+    background: #7F77DD;
+}
