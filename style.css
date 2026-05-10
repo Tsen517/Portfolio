@@ -6,8 +6,8 @@
 
 body{
     font-family: 'Segoe UI',sans-serif;
-    background: #0a0a0a;
-    color: #fff;
+    background: #fff;
+    color: #0a0a0a;
 }
 
 .navbar{
@@ -37,7 +37,7 @@ body{
 .nav-links li a{
     color: #fff;
     text-decoration: none;
-    transform: color 0.3s;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover{
@@ -53,9 +53,13 @@ body{
     gap: 2rem;
 }
 
+
 .home-content{
-    flex: 1.5;
+    display:flex;
+    flex-direction: column;
+    gap: 3rem;
 }
+
 
 .home-img{
     flex: 1;
@@ -64,45 +68,80 @@ body{
 }
 
 .home-img img{
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 500px;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 50%;
-    border:8px solid #7F77DD;
+
 }
 
-.greeting {
-    font-size: 1.2rem;
-    color: #888;
-    margin-bottom: .5rem;
+.home-p {
+    color: black;
+    background: rgb(128, 128, 128,0.124);
+    display: inline-block;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
 }
+
 
 h1{
-    font-size: 3.5rem;
-    font-weight: 700;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
-.highlight {
-    color: #7F77DD;
+h3{
+    display: block;
+    font-size: 1.17em;
+    unicode-bidi: isolate;
+    margin-bottom: 10px;
 }
 
-.btn{
-    display: inline-block;
-    padding: .75rem 1.5rem;
-    background: #7F77DD;
-    color: #fff;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 1.5rem;
-    transition: background 0.3s;
+.info-p{
+    color: #222;
+    font-family: "Roboto",sans-serif;
+    padding-bottom:10px ;
 }
 
-.btn:hover{
-    background: #534AB7;
+.info-p2{
+    display: flex;
+    gap: 1rem;
+    color: #2c2c2c;
+    padding-bottom: 10px;
 }
+
+.btnn{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 10px;
+}
+
+.btn-home{
+    background-color: #0a0a0a;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.btn-contact{
+    background-color: transparent;
+    border: 2px solid #0a0a0a;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-contact:hover{
+    background-color: #0a0a0a;
+    color: rgb(255, 255, 255);
+}
+
 
 #about{
     display:grid;
@@ -147,7 +186,7 @@ h1{
     padding: 1.5rem 1rem;
     text-align: center;
     font-weight: 500;
-    transition: transform .2s background .2s;
+    transition: transform .2s, background .2s;
 }
 .skill-card:hover{
     transform: scale(1.05);
