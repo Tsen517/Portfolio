@@ -12,14 +12,14 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Cen_code.</div>
+            <div class="logo">YingCen</div>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#service" class="nav-link">Services</a></li>
                 <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#course" class="nav-link">Course</a></li>
             </ul>
             <a href="#contact" class="btn nav-btn">Let's Talk</a>
         </nav>
@@ -29,27 +29,26 @@
         <div class="home-content">
             <span class="greeting">👋 Hello Here!</span>
             <h1>Hi, I'm Liu Ying Cen</h1>
-            <h3>Web Developer</h3>
+            <h3> 致力於成為一名全端工程師</h3>
             <div class="info-p">
-                <p>I craft digital experiences by turning abstract ideas into code.</p>
-                <p>Currently exploring the React ecosystem through hands-on projects.</p>
-                <p>I thrive on building from zero to one and solving problems with care.</p>
+                <p>前端網頁開發基礎</p>
+                <p>我熱衷於從零到一的創建過程，並用心解決各類問題。</p>
             </div>
             <div class="info-p2">
-                <p>Based in Taiwan</p>
-                <p>Under development</p>
+                <p>大學生</p>
+                <p>資工系</p>
             </div>
             <div class="hero-stats">
                 <div class="stat-item">
-                    <span class="stat-number">30+</span>
+                    <span class="stat-number">60+</span>
                     <span class="stat-label">Days of Coding</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">2+</span>
+                    <span class="stat-number">5+</span>
                     <span class="stat-label">Projects Build</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">20+</span>
+                    <span class="stat-number">100+</span>
                     <span class="stat-label">hours of Learning</span>
                 </div>
             </div>
@@ -59,46 +58,105 @@
             </div>
             <div class="social-links">
                 <a href="# " class="social-btn github"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-btn threads"> <i class="fab fa-threads"></i> </a>
                 <a href="# " class="social-btn instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="home-img">
             <img src="assets/img.jpg" alt="portfolio image">
-            <div class="img-tag tag-top-right">
-                <i class="fas fa-brain" style="color:#00bcd4"></i>
-                <span>Problem Solver</span>
-            </div>
-            <div class="img-tag tag-middle-left">
-                <i class="fas fa-paint-brush" style="color:#00bcd4"></i>
-                <span>Digital Creator</span>
-            </div>
-            <div class="img-tag tag-bottom-right">
-                <i class="fas fa-seedling" style="color:#00bcd4"></i>
-                <span>Always Learning</span>
-            </div>
         </div>
     </section>
-    <section id="about">
-        <div class="about-img">
-            <img src="assets/img.jpg" alt="about photo">
-        </div>
-        <div class="about-text">
-            <h2>About me</h2>
-            <p>I am a passionate web developer with experience in creating responsive and user-friendly websites. I
-                specialize in front-end development and have a strong foundation in HTML, CSS, and JavaScript.</p>
+    <section class="about" id="about">
+        <div class="about-container">
+
+            <div class="about-img">
+                <img src="assets/img.jpg" alt="about photo">
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">ABOUT ME</span>
+                <h2>Building Skills Through<br><span class="highlight">Real-World Projects</span></h2>
+                <div class="divider"></div>
+
+                <p>第一段：你的背景與動機。</p>
+                <p>第二段：你的學習態度與目標。</p>
+
+                <h3 class="drive-title">What Drives Me</h3>
+                <div class="drive-grid">
+                    <div class="drive-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Languages</h4>
+                        <p>HTML5, CSS, JavaScript, Git/Github, React</p>
+                    </div>
+                    <div class="drive-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Education</h4>
+                        <p>靜宜大學 資工系</p>
+                    </div>
+                    <div class="drive-card">
+                        <i class="fas fa-folder-open"></i>
+                        <h4>Projects</h4>
+                        <p>完成 5+ 個專案</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-    <section class="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Vscode</div>
-            <div class="skill-card">Git</div>
+
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <span class="section-label">PROJECTS</span>
+            <h2 class="section-title">Projects & Practice</h2>
+            <div class="divider"></div>
+            <p>記錄我從學習到實作，一步步累積的專案與經驗。</p>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <div class="project-img">
+                    <img src="assets/project1.png" alt="Portfolio Website">
+                </div>
+                <h3>Portfolio Website</h3>
+                <p>個人作品集網站，整理我的學習歷程與專案成果。</p>
+                <div class="project-footer">
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-img">
+                    <img src="assets/project2.png" alt="bookstore">
+                </div>
+                <h3>Bookstore 線上書店</h3>
+                <p>建立一個完整的線上購物流程，使用者可以瀏覽商品、加入購物車並完成模擬支付。</p>
+                <div class="project-footer">
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </article>
+
         </div>
     </section>
+
 </body>
 
 </html>
