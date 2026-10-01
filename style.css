@@ -1,3 +1,8 @@
+:root{
+    --primary-color:#7F77DD;
+    --primary-hover:#5f57c0;
+    --text-muted:#888;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +11,8 @@
 
 body{
     font-family: 'Segoe UI',sans-serif;
-    background: #fff;
-    color: #0a0a0a;
+    background: #0a0a0a;
+    color: #fff;
 }
 
 .navbar{
@@ -44,6 +49,20 @@ body{
     color: #7F77DD;
 }
 
+.nav-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.nav-btn:hover{
+    background-color: var(--primary-hover);
+}
+
 #home{
     display: flex;
     align-items: center;
@@ -57,7 +76,7 @@ body{
 .home-content{
     display:flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.2rem;
 }
 
 
@@ -65,6 +84,7 @@ body{
     flex: 1;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .home-img img{
@@ -75,6 +95,41 @@ body{
 
 }
 
+.img-tag {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.img-tag i {
+    font-size: 1rem;
+}
+
+/* 各標籤位置 */
+.tag-top-right {
+    top: 8%;
+    right: -5rem;
+}
+
+.tag-middle-left {
+    top: 50%;
+    left: -6rem;
+    transform: translateY(-50%);
+}
+
+.tag-bottom-right {
+    bottom: 10%;
+    right: -5rem;
+}
 .home-p {
     color: black;
     background: rgb(128, 128, 128,0.124);
@@ -84,24 +139,31 @@ body{
     margin-bottom: 30px;
 }
 
+.greeting {
+    background: rgba(127, 119, 221, 0.15);
+    color: #7F77DD;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    width: fit-content;
+}
 
 h1{
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
 h3{
-    display: block;
-    font-size: 1.17em;
-    unicode-bidi: isolate;
-    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.3rem;
 }
 
 .info-p{
-    color: #222;
+    color: #ccc;
     font-family: "Roboto",sans-serif;
     padding-bottom:10px ;
 }
@@ -109,8 +171,37 @@ h3{
 .info-p2{
     display: flex;
     gap: 1rem;
-    color: #2c2c2c;
+    color: #aaa;
     padding-bottom: 10px;
+    align-items: center;
+}
+
+.info-p2 p:not(:last-child)::after{
+    content:".";
+    margin-left:1rem;
+    color: #555;
+}
+
+.hero-stats{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-label{
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
 .btnn{
@@ -120,26 +211,74 @@ h3{
 }
 
 .btn-home{
-    background-color: #0a0a0a;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 10px;
-    padding: 10px 10px;
-    cursor: pointer;
+    background-color: #fff;
+    color: #0a0a0a;
+    border-radius: 999px;
+    padding: 0.7rem 1.8rem;
+    text-decoration: none;
+    font-weight: 600 ;
 }
 
 .btn-contact{
-    background-color: transparent;
-    border: 2px solid #0a0a0a;
-    border-radius: 10px;
-    padding: 10px 10px;
-    cursor: pointer;
-    transition: 0.4s;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 999px;
+    padding: 0.7rem 1.8rem;
+    text-decoration: none;
+    background: transparent;
 }
 
 .btn-contact:hover{
     background-color: #0a0a0a;
     color: rgb(255, 255, 255);
+}
+
+.social-links{
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.social-btn{
+    color: #aaa;
+    background: #1a1a1a;
+    border: none;
+    border-radius: 16px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: border-color 0.3s, color 0.3s, transform 0.3s;
+    flex-shrink: 0;
+}
+
+.social-btn:hover{
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.social-btn.github:hover{
+    background: #333;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.social-btn.linkedin:hover{
+    background: #0077B5;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.social-btn.instagram:hover{
+    background: radial-gradient(circle at 30% 110%, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.social-btn i{
+    font-size: 1.4rem;
 }
 
 
@@ -181,6 +320,7 @@ h3{
     gap: 1rem;
 }
 .skill-card{
+    color: #fff;
     background: #1a1a1a;
     border-radius: 10px;
     padding: 1.5rem 1rem;

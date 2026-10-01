@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Liu Ying Cen</div>
+            <div class="logo">Cen_code.</div>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -20,12 +21,13 @@
                 <li><a href="#project" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <a href="#contact" class="btn nav-btn">Let's Talk</a>
         </nav>
     </header>
 
     <section class="home" id="home">
         <div class="home-content">
-            <p class="home-p">· Available for work</p>
+            <span class="greeting">👋 Hello Here!</span>
             <h1>Hi, I'm Liu Ying Cen</h1>
             <h3>Web Developer</h3>
             <div class="info-p">
@@ -37,17 +39,44 @@
                 <p>Based in Taiwan</p>
                 <p>Under development</p>
             </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Days of Coding</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Projects Build</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">hours of Learning</span>
+                </div>
+            </div>
             <div class="btnn">
-            <a href="#project" class="btn-home">View My Work</a>
-            <a href="#" class="btn-contact">Contact Me</a>
+                <a href="#contact" class="btn-home">Hire Me</a>
+                <a href="#" class="btn-contact">Download CV</a>
             </div>
             <div class="social-links">
-                <a href="#">github</a>
-                <a href="#">linkedin</a>
+                <a href="# " class="social-btn github"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="# " class="social-btn instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="home-img">
             <img src="assets/img.jpg" alt="portfolio image">
+            <div class="img-tag tag-top-right">
+                <i class="fas fa-brain" style="color:#00bcd4"></i>
+                <span>Problem Solver</span>
+            </div>
+            <div class="img-tag tag-middle-left">
+                <i class="fas fa-paint-brush" style="color:#00bcd4"></i>
+                <span>Digital Creator</span>
+            </div>
+            <div class="img-tag tag-bottom-right">
+                <i class="fas fa-seedling" style="color:#00bcd4"></i>
+                <span>Always Learning</span>
+            </div>
         </div>
     </section>
     <section id="about">
