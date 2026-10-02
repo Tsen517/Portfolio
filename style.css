@@ -25,7 +25,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   background: var(--bg);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
   z-index: 1000;
 }
 
@@ -67,14 +67,14 @@ body {
 }
 
 #home {
-   display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    align-items: center;
-    gap: 4rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 100vh;
-    padding: 6rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 6rem 2rem 3rem;
 }
 
 .home-content {
@@ -92,14 +92,12 @@ body {
 
 .home-img img {
   width: 100%;
-    max-width: 460px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 24px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  max-width: 460px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
-
-
 
 .greeting {
   background: var(--surface);
@@ -171,27 +169,29 @@ h3 {
 }
 
 .btn-home,
-.btn-contact{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.7rem 1.8rem;
-    border: 2px solid var(--text);
-    border-radius: 999px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.3s, color 0.3s;
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.8rem;
+  border: 2px solid var(--text);
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
-.btn-home{
-    background-color: var(--text);
-    color: var(--bg);
+.btn-home {
+  background-color: var(--text);
+  color: var(--bg);
 }
 
-.btn-contact{
-    background: transparent;
-    color: var(--text);
+.btn-contact {
+  background: transparent;
+  color: var(--text);
 }
 
 .btn-contact:hover {
@@ -341,118 +341,389 @@ h3 {
   margin: 0;
 }
 
-
-.projects{
-    padding: 6rem 1.5rem;
+.projects {
+  padding: 6rem 1.5rem;
 }
 
-.section-header{
-    max-width: 640px;
-    margin: 0 auto 3.5rem;
+.section-header {
+  max-width: 640px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+}
+
+.section-header .section-label {
+  display: block;
+}
+
+.section-header .section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0.6rem 0 0;
+}
+
+.section-header .divider {
+  margin: 1rem auto 1.5rem; /* 分隔線置中 */
+}
+
+.section-header p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.project-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-img {
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06); /* 沒圖時的底色 */
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-img img.is-phone {
+  object-fit: cover;
+  object-position: center 45%; /* 讓棋盤落在畫面中央 */
+}
+
+.project-card h3 {
+  margin-top: 0.6rem;
+  color: #2a2a2a;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.project-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 0.6rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags span {
+  background: #f0f0f0;
+  color: #444;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 8px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+}
+
+.skills,
+.course {
+  padding: 6rem 1.5rem;
+}
+
+.skill-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.6rem;
+  background: #f4f4f5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.skill-card h3 {
+  color: #2a2a2a;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.skill-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.skill-icons i {
+  color: #2a2a2a;
+  line-height: 1;
+}
+
+.skill-icons i.is-learning {
+  color: #c4c4c4;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 185px;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  column-gap: 72px;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0.45rem;
+  left: 178px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  background: #2a2a2a;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.timeline-date {
+  text-align: right;
+  padding-top: 0.2rem;
+}
+
+.timeline-date strong {
+  display: block;
+  color: #2a2a2a;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.timeline-date span {
+  display: block;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.timeline-card {
+  padding: 1.3rem 1.5rem;
+  background: #f4f4f5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  min-width: 0;
+}
+
+.timeline-card img {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 220px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.timeline-card img.is-logo {
+  object-fit: contain;
+  object-position: center;
+  padding: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.timeline-card img.is-phone {
+  height: 340px;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.8rem;
+  background: #e9e9ea;
+}
+
+.timeline-card h3 {
+  color: #2a2a2a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.contact{
+    padding: 6rem 1.5rem 4rem;
+}
+
+.contact-inner{
+    max-width: 680px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.section-header .section-label{
+.contact-inner .section-label{
     display: block;
 }
 
-.section-header .section-title{
+.contact-inner h2{
     font-size: 2.8rem;
     font-weight: 700;
     margin: 0.6rem 0 0;
 }
 
-.section-header .divider{
-    margin: 1rem auto 1.5rem;      /* 分隔線置中 */
+.contact-inner .divider{
+    margin: 1rem auto 1.5rem;
 }
 
-.section-header p{
+.contact-msg{
     color: #555;
-    line-height: 1.8;
+    line-height: 1.9;
+    margin-bottom: 2rem;
 }
 
-.project-grid{
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.contact-inner .contact-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    margin: 0 0 2rem;
+    padding: 0;
+}
+
+.contact-list li{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.contact-list i{
+    width: 1.4rem;
+    text-align: center;
+    color: #2a2a2a;
+    font-size: 1.1rem;
+}
+
+.contact-list a{
+    color: #2a2a2a;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.contact-list a:hover{
+    text-decoration: underline;
+}
+
+.contact-social{
+    display: flex;
+    justify-content: center;
     gap: 1.8rem;
 }
 
-.project-card{
+.contact-social a{
     display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    padding: 1.5rem;
-    background: #fff;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.project-img{
-    aspect-ratio: 4 / 3;
-    border-radius: 16px;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.06);       /* 沒圖時的底色 */
-}
-
-.project-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.project-card h3{
-    margin-top: 0.6rem;
-    color: #2a2a2a;
-    font-size: 1.35rem;
-    font-weight: 700;
-}
-
-.project-card p{
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.7;
-}
-
-.project-footer{
-    margin-top: auto;                      /* 標籤與按鈕固定在卡片底部 */
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    padding-top: 0.6rem;
-}
-
-.tags{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.tags span{
-    background: #f0f0f0;
-    color: #444;
-    font-size: 0.85rem;
-    padding: 0.35rem 0.9rem;
-    border-radius: 8px;
-}
-
-.project-links{
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
-}
-
-.project-links a{
-    display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background: #2a2a2a;
-    color: #fff;
-    font-size: 0.95rem;
-    font-weight: 600;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #efefef;
+    color: #222;
+    font-size: 2.2rem;
     text-decoration: none;
-    padding: 0.7rem 1.4rem;
-    border-radius: 999px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.contact-social a:hover{
+    transform: translateY(-6px);
+    color: #fff;
+}
+
+.contact-social a.github:hover{ background: #2a2a2a; }
+.contact-social a.line:hover{ background: #06C755; }
+
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }

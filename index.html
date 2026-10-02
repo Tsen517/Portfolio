@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 </head>
 
 <body>
@@ -16,10 +17,10 @@
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li><a href="#course" class="nav-link">Course</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <a href="#contact" class="btn nav-btn">Let's Talk</a>
         </nav>
@@ -127,7 +128,7 @@
                         <span>JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Tsen517/Portfolio"><i class="fab fa-github"></i> GitHub</a>
                         <a href="#"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
                     </div>
                 </div>
@@ -148,12 +149,187 @@
                         <span>SQLite</span>
                     </div>
                     <div class="project-links">
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://github.com/Tsen517/Bookstore"><i class="fab fa-github"></i> GitHub</a>
                         <a href="#"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
                     </div>
                 </div>
             </article>
 
+            <article class="project-card">
+                <div class="project-img">
+                    <img src="assets/project3.png" class="is-phone" alt="Android 西洋棋 App">
+                </div>
+                <h3>雙人西洋棋 Android 對弈 App</h3>
+                <p>基於 Android Studio 開發的離線雙人對弈應用，實作客製化棋盤渲染、完整西洋棋規則判斷、雙人計時與悔棋機制，並運用 AI 工具進行協同開發與邏輯優化。</p>
+                <div class="project-footer">
+                    <div class="tags">
+                        <span>Kotlin</span>
+                        <span>AI-Assisted</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Tsen517/Chess-Game"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <span class="section-label">SKILLS</span>
+            <h2>技能</h2>
+            <div class="divider"></div>
+            <p>從專案中累積的技能，與經驗。</p>
+        </div>
+
+        <div class="skill-grid">
+
+            <article class="skill-card">
+                <div class="skill-top">
+                    <h3>前端基礎</h3>
+                    <div class="skill-icons">
+                        <i class="devicon-html5-plain colored" title="HTML"></i>
+                        <i class="devicon-css3-plain colored" title="CSS"></i>
+                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                        <i class="devicon-react-original is-learning" title="React(學習中)"></i>
+                    </div>
+                </div>
+                <p>我擁有基礎 HTML、CSS、JS 基礎，學習過 MVC 架構，目前進階學習前端框架。</p>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-top">
+                    <h3>專案進行版控管理</h3>
+                    <div class="skill-icons">
+                        <i class="devicon-git-plain colored" title="Git"></i>
+                        <i class="devicon-github-original" title="GitHub"></i>
+                    </div>
+                </div>
+                <p>活用 Git / GitHub 對專案進行版本控制，並有少數多人協作經驗。</p>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-top">
+                    <h3>後端基礎</h3>
+                    <div class="skill-icons">
+                        <i class="devicon-python-plain colored" title="Python"></i>
+                        <i class="devicon-flask-original" title="Flask"></i>
+                        <i class="devicon-sqlite-plain colored" title="SQLite"></i>
+                        <i class="devicon-postgresql-plain is-learning" title="PostgreSQL(學習中)"></i>
+                    </div>
+                </div>
+                <p>透過 Python Flask 完成基本 API 串接與資料庫 CRUD 操作。</p>
+            </article>
+
+            <article class="skill-card">
+                <div class="skill-top">
+                    <h3>APP開發經驗</h3>
+                    <div class="skill-icons">
+                        <i class="devicon-kotlin-plain colored" title="Kotlin"></i>
+                    </div>
+                </div>
+                <p>使用 Android Studio，以 Canvas 完成棋盤的繪製與渲染。</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="course" id="course">
+        <div class="section-header">
+            <span class="section-label">COURSE</span>
+            <h2>我的大學歷程</h2>
+            <div class="divider"></div>
+        </div>
+
+        <ol class="timeline">
+            <li class="timeline-item">
+                <time class="timeline-date"><strong>2023</strong><span>9月</span></time>
+                <article class="timeline-card">
+                    <img src="assets/course-admission.jpg" class="is-logo" alt="錄取靜宜大學">
+                    <h3>錄取靜宜大學</h3>
+                    <p>入學資工系，奠定演算法、資料結構與程式設計基礎邏輯能力。</p>
+                </article>
+            </li>
+
+            <li class="timeline-item">
+                <time class="timeline-date"><strong>2024</strong><span>9月</span></time>
+                <article class="timeline-card">
+                    <h3>啟蒙網頁前端開發</h3>
+                    <p>探索 Web 前端領域，透過專案實作掌握 HTML5、CSS3 與 JavaScript 核心開發與佈局能力。</p>
+                </article>
+            </li>
+
+            <li class="timeline-item">
+                <time class="timeline-date"><strong>2025</strong><span>2月</span></time>
+                <article class="timeline-card">
+                    <img src="assets/project2.png" alt="Bookstore 專案畫面">
+                    <h3>拓展後端與 API 串接</h3>
+                    <p>結合專案需求學習 Python 後端基礎，成功串接 Open Library API 實現書籍資料（書名、作者、封面與簡介）的自動化擷取；並透過 SQLite 進行資料庫初始化與批次寫入。
+                    </p>
+                </article>
+            </li>
+            <li class="timeline-item">
+                <time class="timeline-date"><strong>2025</strong><span>9月</span></time>
+                <article class="timeline-card">
+                    <img src="assets/course-cloudnative.jpg" class="is-logo" alt="行雲者社團">
+                    <h3>加入行雲者社團</h3>
+                    <p>深入學習 TypeScript、React、NestJS 與 Docker 容器化技術；首次在專案中實踐 GitLab 多人協作與版本控制流程，並透過團隊交流確立現代全棧開發的學習方向。</p>
+                </article>
+            </li>
+            <li class="timeline-item">
+                <time class="timeline-date"><strong>2025</strong><span>9月</span></time>
+                <article class="timeline-card">
+                    <h3>高校網站開發實務課程</h3>
+                    <p>運用 .NET Core 框架構建 MVC 架構網頁，實作基礎資料庫 CRUD 操作</p>
+                </article>
+            </li>
+            <li class="timeline-item">
+                <time class="timeline-date"><strong>2026</strong><span>2 月</span></time>
+                <article class="timeline-card">
+                    <img src="assets/project3.png" class="is-phone" alt="Android 專案畫面">
+                    <h3>跨足行動應用 App 開發</h3>
+                    <p>學習 Android / Mobile App 開發技術，透過課堂專案實作，掌握 UI 介面繪製與跨平台邏輯處理。</p>
+                </article>
+            </li>
+            <li class="timeline-item">
+                <time class="timeline-date"><strong>2026</strong><span>4 月</span></time>
+                <article class="timeline-card">
+                    <img src="assets/project1.png" alt="個人作品集網站">
+                    <h3>打造個人作品集網站</h3>
+                    <p>參考 GitHub 開源優秀設計(Amine Hamzaoui)，使用原生 HTML、CSS、JS 手工打造響應式個人網站，深化前端佈局與切版技巧。</p>
+                </article>
+            </li>
+            <li class="timeline-item">
+                <time class="timeline-date"><strong>2026</strong><span>持續進行</span></time>
+                <article class="timeline-card">
+                    <h3>深耕 React 框架與專案開發</h3>
+                    <p>全面投入 React 生態系學習，專注於組件化開發、狀態管理(State Management)與現代化 Web 專案構建。</p>
+                </article>
+            </li>
+        </ol>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <span class="section-label">CONTACT</span>
+            <h2>Let's Connect</h2>
+            <div class="divider"></div>
+
+            <p class="contact-msg">感謝你的閱讀！我正持續在全端網頁開發的道路上探索與成長。<br>如果你對我的專案感興趣，或有任何交流的機會，歡迎隨時與我聯繫！</p>
+
+            <ul class="contact-list">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:q163298@icloud.com">q163298@icloud.com</a>
+                </li>
+            </ul>
+
+            <div class="contact-social">
+                <a href="https://github.com/Tsen517" class="github" target="_blank" rel="noopener" aria-label="Github"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://line.me/ti/p/liu248950" class="line" target="_blank" rel="noopener" aria-label="Line"><i
+                        class="fab fa-line"></i></a>
+            </div>
         </div>
     </section>
 
